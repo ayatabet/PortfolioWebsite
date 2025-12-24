@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Aya</span><br> from Lebanon</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ------------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a passionate and driven individual with a background in Computer and Communications Engineering, always eager to learn and innovate. I thrive at the intersection of technology and creativity, where I can solve complex problems and bring ideas to life. Whether it's developing efficient code, collaborating with teams, or diving into the latest tech trends, I’m fueled by curiosity and a desire to make an impact. I'm excited to continue growing, exploring opportunities, and contributing to projects that challenge me to be my best.
+                </p>
+                <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('softskills')">Soft Skills</p>
+                <p class="tab-links" onclick="opentab('practicalskills')">Practical Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+            </div>
+            <div class="tab-contents active-tab" id="softskills">
+                <ul>
+                    <li><span>Problem-Solving & Critical Thinking</span><br>Quickly analyze issues and find effective solutions.</li>
+                    <li><span>Communication & Collaboration</span><br>Effectively work with teams, designers, and backend developers.</li>
+                    <li><span>Adaptability & Continuous Learning</span><br>Stay updated with the latest frontend technologies, in addition to being a fast learner.</li>
+                    <li><span>Creativity & UI/UX Awareness</span><br>Design visually appealing and user-friendly interfaces.</li>
+                    <li><span>Time Management & Prioritization</span><br>Efficiently handle multiple tasks and meet deadlines.</li>
+                    <li><span>Attention to Detail</span><br>Ensure pixel-perfect designs and bug-free code.</li>
+                    <li><span>Teamwork & Leadership</span><br>Work well in teams and take initiative when needed.</li>
+                    <li><span>Emotional Intelligence</span><br>Understand and respond to team dynamics effectively.</li>
+                    <li><span>Conflict Resolution</span><br>Handle challenges and disagreements professionally.</li>
+                    <li><span>Client & Stakeholder Management</span><br>Communicate ideas clearly and align with project goals.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="practicalskills">
+                <ul>
+                    <li><span>Programming Languages</span><br>Java, JavaScript, Python, HTML, CSS, Kotlin, Octave, XML, Shell, C, JSX, JSON, PHP, MYSQL, SQL.</li>
+                    <li><span>Frontend Development</span><br>HTML5, CSS3, JavaScript (ES6+), JSX.</li>
+                    <li><span>Backend Development</span><br>JavaScript (IndexedDB), PHP.</li>
+                    <li><span>Frameworks & Libraries</span><br>React.js, Node.js, Android Studio.</li>
+                    <li><span>Styling & UI/UX</span><br>Creativity and Attention to detail.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>December 2024</span><br>Developed first protoype of e-commerce website, shown in demo video.</li>
+                </ul>
+                 <ul>
+                    <li><span>July 2024</span><br>Started working on Three.js project portfolio, still under work.</li>
+                </ul>
+                <ul>
+                    <li><span>September 2024</span><br>Deployed second e-commerce website.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>October 2021</span><br>Graduated with a Life Science degree from OMEC School.</li>
+                    <li><span>July 2024</span><br>Graduated with a Bachelor of Science in Communication Engineering from LIU.</li>
+                    <li><span>September 2025</span><br>Pursuing Masters' Degree in Computer and Communication Engineering at LIU.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------- services -------------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I design and develop modern, responsive websites with a strong focus on aesthetics, usability, and performance.</p>
+                <p>Frameworks: Three.js, React.js, default HTML, CSS, and Javascript</p></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h2>Full-Stack Web Development</h2>
+                <p>I enjoy developing full-stack websites using React.js and Node.js.</p>
+                </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <h2>Google Extensions</h2>
+                <p>I specialize in developing custom Google Extensions, creating tailored solutions to enhance browser functionality and improve user experience.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------portfolio--------------------------->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>GPTGenius</h3>
+                    <p>Google Chrome Extension, that acts as a prompt manager for your interactions with AI chatbots.</p>
+                    <a href="demos.html" target="_blank">View</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>E-commerce Store</h3>
+                    <p>This website is made for you to choose your favorite shopping items, and buy them.</p> 
+                    <a href="demos.html" target="_blank">View</a>                  
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!----------------------------contact------------------------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ayaxthabet@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+961 71 282 495</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/aya-thabet-05b18828a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ayatabet"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="text" name="Email" placeholder="your Email" required>
+                    <textarea name="Message" rows="6" placeholder="your messsage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Aya Tabet. Made with <i class="fa-solid fa-heart"></i> .</p>
+    </div>
+ </div>
+
+<script>
+
+    /*var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink in tablinks){
+        tablink.classList.remove('active-link');
+        }
+        for(tabcontent in tabcontents){
+        tabcontent.classList.remove('active-tab');
+    }
+    }*/
+
+    function opentab(tabname) {
+    const tablinks = document.querySelectorAll('.tab-links');
+    const tabcontents = document.querySelectorAll('.tab-contents');
+
+    // Remove active classes from all links and contents
+    tablinks.forEach(tablink => {
+        tablink.classList.remove('active-link');
+    });
+
+    tabcontents.forEach(tabcontent => {
+        tabcontent.classList.remove('active-tab');
+    });
+
+    // Add the active-tab class to the corresponding tab content
+    const activeContent = document.getElementById(tabname);
+    if (activeContent) {
+        activeContent.classList.add('active-tab');
+        event.currentTarget.classList.add('active-link');
+    }
+}
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz_H6e50vbt5Bk39pvr_BxnL_r00Ea1pTR7NlWBiehoRrti9r0neazOBLxB0j0tnhZ0/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => 
+            {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+            form.reset()
+            })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+
+    .projects-section {
+      padding: 50px 10%;
+    }
+    .projects-section h2 {
+      text-align: center;
+      color: #b23fff;
+      margin-bottom: 50px;
+      font-size: 2.5rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 60px;
+    }
+
+    .project-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    /* Top card: Project info */
+    .project-info-card {
+      background-color: #1a1a1a;
+      border: 2px solid #b23fff;
+      border-radius: 12px;
+      padding: 40px 25px;
+      width: 100%;
+      min-height: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #b23fff;
+    }
+
+    .project-info-card h3 {
+      color: #b23fff;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .project-info-card p {
+      font-size: 1rem;
+      color: #ddd;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .project-info-card span {
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #b23fff;
+      font-size: 0.9rem;
+    }
+    .project-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .project-links a {
+      text-decoration: none;
+      padding: 8px 18px;
+      border: 1px solid #b23fff;
+      border-radius: 6px;
+      color: #b23fff;
+      transition: 0.3s;
+      font-size: 0.9rem;
+    }
+    .project-links a:hover {
+      background-color: #b23fff;
+      color: #0d0d0d;
+    }
+
+    /* Bottom card: Project screenshot */
+    .project-screenshot-card {
+      background-color: #1a1a1a;
+      border: 2px solid #b23fff;
+      border-radius: 12px;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    .project-screenshot-card img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 500px) {
+      .project-info-card {
+        padding: 30px 15px;
+      }
+      .project-screenshot-card img {
+        max-height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="projects-section" id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+
+      <!-- GPTGenius -->
+      <div class="project-container">
+        <div class="project-info-card">
+          <h3>GPTGenius</h3>
+          <p>A Chrome extension that helps users manage AI prompts efficiently. Save, categorize, and quickly reuse prompts for any AI tool.</p>
+          <span>Tech: JavaScript, Chrome API, HTML, CSS</span>
+          <div class="project-links">
+            <a href="https://github.com/ayatabet/GPTGenius" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="project-screenshot-card">
+          <img src="images/gptgeniuspic.JPG" alt="GPTGenius Screenshot">
+        </div>
+      </div>
+
+      <!-- E-commerce Website -->
+      <div class="project-container">
+        <div class="project-info-card">
+          <h3>E-commerce Website</h3>
+          <p>A responsive React e-commerce frontend with product listings, shopping cart UI, and clean modern design. Deployed live via Vercel.</p>
+          <span>Tech: React, Vite, CSS</span>
+          <div class="project-links">
+            <a href="https://github.com/ayatabet/template_1" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="project-screenshot-card">
+          <img src="images/ecommerce.JPG" alt="E-commerce Website Screenshot">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
